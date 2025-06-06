@@ -11,6 +11,28 @@
   body {
     @apply text-gray-900 antialiased;
   }
+
+  /* Font assignments */
+  h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+  }
+
+  p, div {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  button {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .caption {
+    font-family: 'Mulish', sans-serif;
+  }
+
+  /* Fallback font for body text */
+  body {
+    font-family: 'Nunito', sans-serif;
+  }
 }
 
 @layer components {
