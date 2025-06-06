@@ -99,9 +99,9 @@ export default function Home() {
             </div>
             <div className="relative">
               <img
-                src="/19727bf7e94b5 (1).png"
+                src="/heroimage-aidoctor2.jpg"
                 alt="AI Medical Assistant Interface"
-                className="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl w-full h-auto"
               />
             </div>
           </div>
