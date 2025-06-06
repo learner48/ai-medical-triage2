@@ -18,22 +18,22 @@ export default function Home() {
   const features = [
     {
       icon: MessageSquare,
-      title: 'AI-Powered Symptom Assessment',
+      title: 'Instant AI Symptom Checker',
       description: 'Advanced AI technology evaluates your symptoms and determines urgency levels in real-time.'
     },
     {
       icon: Video,
-      title: 'Secure Video Consultations',
+      title: 'Talk to a Doctor When Needed',
       description: 'Connect with licensed healthcare providers through HIPAA-compliant video calls.'
     },
     {
       icon: Shield,
-      title: 'Privacy & Security',
+      title: 'Your Data Is 100% Private & Secure',
       description: 'Your health information is protected with enterprise-grade security and HIPAA compliance.'
     },
     {
       icon: Clock,
-      title: '24/7 Availability',
+      title: '24/7 Access — Anytime, Anywhere',
       description: 'Access medical triage assistance anytime, anywhere in the United States.'
     }
   ];
@@ -70,29 +70,30 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                AI-Powered Medical Triage Assistant
+                Instantly Know If You Need to See a Doctor — Or Not
               </h1>
               <p className="mt-6 text-xl text-gray-600">
-                Get instant medical guidance and connect with healthcare professionals when needed. Our AI system helps assess your symptoms and determine the appropriate level of care.
+                Worried about your symptoms? Get instant AI-powered guidance and know when to seek care — no appointments, no waiting rooms.
               </p>
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <div className="mt-8">
                 <Button
                   size="lg"
                   onClick={() => navigate('/triage/start')}
-                  className="flex items-center justify-center"
+                  className="flex items-center justify-center mb-4"
                 >
-                  Start Symptom Assessment
+                  Start Free Symptom Check
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 {!user && (
-                  <Button
-                    variant="secondary"
-                    size="lg"
-                    onClick={() => navigate('/register')}
-                    className="flex items-center justify-center"
-                  >
-                    Create Account
-                  </Button>
+                  <p className="text-center text-sm text-gray-600">
+                    Already have an account?{' '}
+                    <button 
+                      onClick={() => navigate('/login')} 
+                      className="text-primary-500 hover:underline"
+                    >
+                      Sign in
+                    </button>
+                  </p>
                 )}
               </div>
             </div>
@@ -112,10 +113,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">
-              Comprehensive Medical Triage Solution
+              Your AI-Powered Medical Triage Solution
             </h2>
             <p className="mt-4 text-xl text-gray-600">
-              Advanced technology meets healthcare expertise
+              Instant symptom checks. Smarter care decisions. Trusted by 50,000+ users.
             </p>
           </div>
 
