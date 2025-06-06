@@ -99,7 +99,7 @@ export default function Home() {
             </div>
             <div className="relative">
               <img
-                src="/heroimage-aidoctor2.jpg"
+                src="/heroimage-aidoctor.jpg"
                 alt="AI Medical Assistant Interface"
                 className="rounded-lg shadow-xl w-full h-auto"
               />
